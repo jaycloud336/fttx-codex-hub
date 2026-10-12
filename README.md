@@ -1,3 +1,5 @@
+[![FTTX Codex Hub](images/header.jpg)](https://github.com/jaycloud336/fttx-codex-hub/raw/main/images/header.jpg)
+
 # FTTX Codex Hub
 
 A hybrid-access documentation portal for fiber and small-cell field operations: installation guides with no login, proprietary runbooks behind Google identity.
