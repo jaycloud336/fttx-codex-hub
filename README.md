@@ -44,7 +44,7 @@ A single bucket cannot host both tiers under Uniform Bucket-Level Access: `allUs
 
 DNS A records point the hostname at the load balancer (DNS only, not proxied). Google issues a classic managed SSL certificate. HTTP :80 redirects to HTTPS. The URL map splits `/public/*` and `/private/*`.
 
-![Production architecture](images/fttx-codex-hub.png)
+[![Production architecture](images/fttx-codex-hub.png)](https://github.com/jaycloud336/fttx-codex-hub/raw/main/images/fttx-codex-hub.png)
 
 ### Isolated TLS validation: self-signed certificate
 
@@ -52,7 +52,7 @@ Same split path, IAP, Cloud Run, and storage. TLS is a self-signed certificate; 
 
 This is how the URL map and IAP hostname binding were proven **before** a public domain was attached. `/public/` can use the load balancer IP (browser certificate warning). `/private/` requires the hostname; using the bare IP after Google login fails because the certificate does not match the name.
 
-![Isolated TLS validation architecture](images/fttx-codex-hub-self-signed.png)
+[![Isolated TLS validation architecture](images/fttx-codex-hub-self-signed.png)](https://github.com/jaycloud336/fttx-codex-hub/raw/main/images/fttx-codex-hub-self-signed.png)
 
 ---
 
